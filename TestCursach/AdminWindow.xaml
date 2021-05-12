@@ -1,0 +1,14 @@
+﻿<Window x:Class="TestCursach.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestCursach"
+        mc:Ignorable="d"
+        Title="AdminWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="AddProfession" Width="150" Height="30" Click="AddProfession_Click" Margin="0,0,0,150">Создание профессии</Button>
+        <Button x:Name="AddTest" Width="150" Height="30" Click="AddTest_Click">Создание теста</Button>
+        <Button x:Name="EditTest" Width="150" Height="30" Click="EditTest_Click" Margin="0,150,0,0">Редактирование теста</Button>
+    </Grid>
+</Window>
