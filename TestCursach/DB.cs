@@ -11,9 +11,10 @@ namespace TestCursach
 {
     public class DB
     {
-        public const string connectionString = @"Server=DANIKDRANIK\TEW_SQLEXPRESS;Database=Test;Trusted_Connection=True;";
+        public const string connectionString = @"Server=DESKTOP-VLADISL;Database=Test;Trusted_Connection=True;";
         public static int UserID = 0;
         public static int TestID = 0;
+        public static int QuestionID = 0;
         public static void GetUserId(string login)
         {
             DataTable find = Select($"select * from [Users] where email='{login}'");

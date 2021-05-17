@@ -25,22 +25,6 @@ namespace TestCursach
         public MainWindow()
         {
             InitializeComponent();
-            SetTests();
-        }
-
-        public void SetTests()
-        {
-            DataTable dt = DB.Select("select Tests.id, Tests.[name], Professions.[name] as profession from Tests join Professions on Professions.id = Tests.id_p");
-            List<Test> tests = new List<Test>();
-            foreach(DataRow dr in dt.Rows)
-            {
-                tests.Add(new Test { 
-                    ID = dr["id"].ToString(), 
-                    Name = dr["name"].ToString(), 
-                    Profession = dr["profession"].ToString() 
-                });
-            }
-            Tests.ItemsSource = tests;
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -50,10 +34,11 @@ namespace TestCursach
             Close();
         }
 
-        private void Tests_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+
+        private void Start_Click(object sender, RoutedEventArgs e)
         {
-            Test t = (Test)Tests.SelectedItem;
-            DB.TestID = Convert.ToInt32(t.ID);
+            int id_t = DB.GetId("select top 1 * from Tests");
+            DB.TestID = Convert.ToInt32(id_t);
             TestWindow window = new TestWindow();
             window.Show();
             Close();

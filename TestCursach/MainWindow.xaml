@@ -7,20 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox Name="Tests" Height="320" Margin="0,0,0,90" Background="LightYellow" MouseDoubleClick="Tests_MouseDoubleClick">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <Grid Margin="0,2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="350" />
-                            <ColumnDefinition Width="350" />
-                        </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Name}" />
-                        <TextBlock Text="{Binding Profession}" Grid.Column="1" />
-                    </Grid>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <Button x:Name="Start" Width="200" Height="50" FontSize="24" Click="Start_Click">Начать тест</Button>
         <Button x:Name="Exit" Width="120" Height="30" Margin="0,300,500,0" Click="Exit_Click">Выход</Button>
     </Grid>
 </Window>

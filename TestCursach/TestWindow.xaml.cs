@@ -28,11 +28,22 @@ namespace TestCursach
             InitializeComponent();
             Count = 0;
             SetTestQuestions();
+            DeletePreviousAnsers();
         }
-
+        public void DeletePreviousAnsers()
+        {
+            if(DB.Command($"delete from Answers where id_u = {DB.UserID}"))
+            {
+                MessageBox.Show("Старт");
+            }
+            else
+            {
+                MessageBox.Show("Что-то пошло не так..");
+                Close();
+            }
+        }
         public void SetTestQuestions()
         {
-            MessageBox.Show(DB.TestID + "");
             DataTable dt = DB.Select($"select * from Questions where id_t = {DB.TestID}");
             questions = new List<Question>();
             foreach (DataRow dr in dt.Rows)
@@ -55,7 +66,8 @@ namespace TestCursach
                 Count += 1;
                 if (Count == questions.Count)
                 {
-                    MessageBox.Show("Тест окончен, результаты можно посмотреть позже");
+                    ResultWindow result = new ResultWindow();
+                    result.Show();
                 }
                 else
                 {

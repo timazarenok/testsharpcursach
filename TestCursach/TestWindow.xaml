@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="TestWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="Question" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkRed" FontWeight="Bold" Width="500" Height="100" Margin="0,0,0,200"/>
+        <TextBlock x:Name="Question" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkRed" FontSize="20" FontWeight="Bold" Width="700" Height="100" Margin="0,0,0,200"/>
         <Button x:Name="Yes" Width="150" Height="50" FontSize="20" Margin="0,50,250,0" Click="Yes_Click">Да</Button>
         <Button x:Name="No" Width="150" Height="50" FontSize="20" Margin="250,50,0,0" Click="No_Click">Нет</Button>
         <Button x:Name="Exit" Width="120" Height="30" Margin="0,300,500,0" Click="Exit_Click">Выход</Button>

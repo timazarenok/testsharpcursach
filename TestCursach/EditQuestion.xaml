@@ -1,0 +1,16 @@
+﻿<Window x:Class="TestCursach.EditQuestion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestCursach"
+        mc:Ignorable="d"
+        Title="EditQuestion" Height="450" Width="800">
+    <Grid>
+        <Label Width="220" Height="50" Margin="0,0,0,350" FontWeight="Bold" FontSize="20">Изменение вопроса</Label>
+        <ComboBox x:Name="Professions" Width="120" Height="25" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,70,50,0"/>
+        <TextBox x:Name="Name" Width="500" Height="150" Margin="0,50,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
+        <Label Margin="0,0,0,150" FontSize="18" Width="120" Height="30">Вопрос</Label>
+        <Button x:Name="Next" Content="Изменить" Width="120" Height="25" Margin="0,300,0,0" Click="Next_Click"/>
+    </Grid>
+</Window>

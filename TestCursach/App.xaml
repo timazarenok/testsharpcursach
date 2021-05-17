@@ -4,6 +4,15 @@
              xmlns:local="clr-namespace:TestCursach"
              StartupUri="LoginWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="Verdana" />
+            <Setter Property="Background" Value="#FFDD4A" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="10" />
+        </Style>
+        <Style TargetType="Grid">
+            <Setter Property="Background" Value="LightYellow" />
+        </Style>
     </Application.Resources>
 </Application>

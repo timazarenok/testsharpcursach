@@ -8,7 +8,6 @@
         Title="AdminWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="AddProfession" Width="150" Height="30" Click="AddProfession_Click" Margin="0,0,0,150">Создание профессии</Button>
-        <Button x:Name="AddTest" Width="150" Height="30" Click="AddTest_Click">Создание теста</Button>
         <Button x:Name="EditTest" Width="150" Height="30" Click="EditTest_Click" Margin="0,150,0,0">Редактирование теста</Button>
     </Grid>
 </Window>

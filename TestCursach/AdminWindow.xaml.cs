@@ -24,17 +24,11 @@ namespace TestCursach
         {
             InitializeComponent();
         }
-        
-        private void AddTest_Click(object sender, RoutedEventArgs e)
-        {
-            AddTestWindow window = new AddTestWindow();
-            window.Show();
-            Close();
-        }
 
         private void EditTest_Click(object sender, RoutedEventArgs e)
         {
-
+            editTest window = new editTest();
+            window.Show();
         }
 
         private void AddProfession_Click(object sender, RoutedEventArgs e)

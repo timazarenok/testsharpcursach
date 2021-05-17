@@ -25,3 +25,42 @@ C:\Users\Даник\source\repos\TestCursach\TestCursach\obj\Debug\AdminWindow.b
 C:\Users\Даник\source\repos\TestCursach\TestCursach\obj\Debug\TestCursach.csprojAssemblyReference.cache
 C:\Users\Даник\source\repos\TestCursach\TestCursach\obj\Debug\TestWindow.g.cs
 C:\Users\Даник\source\repos\TestCursach\TestCursach\obj\Debug\TestWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.csprojAssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\AddProfessionWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\AddQuestion.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\AdminWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\EditQuestion.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\editTest.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\LoginWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\MainWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\App.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach_MarkupCompile.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach_MarkupCompile.lref
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.exe
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.pdb
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\TestCursach.exe.config
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\TestCursach.exe
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\TestCursach.pdb
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\App.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\AddProfessionWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\AddQuestion.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\AdminWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\EditQuestion.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\editTest.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\LoginWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\MainWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.g.resources
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.Properties.Resources.resources
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.GenerateResource.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\LiveCharts.dll
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\LiveCharts.pdb
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\LiveCharts.xml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\ResultWindow.g.cs
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\ResultWindow.baml
+C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.CopyComplete
