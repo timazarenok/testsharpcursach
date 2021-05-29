@@ -32,3 +32,4 @@ id_u int references Users(id),
 )
 
 insert into Tests values('Тест')
+select * from Users
