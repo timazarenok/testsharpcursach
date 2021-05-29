@@ -64,3 +64,44 @@ C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestC
 C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\ResultWindow.g.cs
 C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\ResultWindow.baml
 C:\Users\Lenovo\OneDrive\Рабочий стол\Тима\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.CopyComplete
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\TestCursach.exe.config
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\TestCursach.exe
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\TestCursach.pdb
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.dll
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.pdb
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.xml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.AssemblyReference.cache
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddProfessionWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddQuestion.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AdminWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\EditQuestion.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\editTest.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\InfoWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\LoginWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\MainWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\ResultWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestWindow.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\App.g.cs
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach_MarkupCompile.cache
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach_MarkupCompile.lref
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\App.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddProfessionWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddQuestion.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AdminWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\EditQuestion.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\editTest.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\LoginWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\MainWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\ResultWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\InfoWindow.baml
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.g.resources
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.Properties.Resources.resources
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.GenerateResource.cache
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.CoreCompileInputs.cache
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.CopyComplete
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.exe
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.pdb

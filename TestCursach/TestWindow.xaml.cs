@@ -36,11 +36,6 @@ namespace TestCursach
             {
                 MessageBox.Show("Старт");
             }
-            else
-            {
-                MessageBox.Show("Что-то пошло не так..");
-                Close();
-            }
         }
         public void SetTestQuestions()
         {

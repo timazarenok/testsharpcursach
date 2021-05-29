@@ -78,5 +78,11 @@ namespace TestCursach
             }
             else MessageBox.Show("Введите E-mail");
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            InfoWindow window = new InfoWindow();
+            window.Show();
+        }
     }
 }
