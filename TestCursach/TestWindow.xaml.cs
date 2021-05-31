@@ -53,9 +53,15 @@ namespace TestCursach
             Question.Text = questions[Count].Value;
         }
 
-        private void Yes_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            if(DB.Command($"insert into Answers values ({questions[Count].ID}, {DB.UserID}, 1)"))
+            MainWindow window = new MainWindow();
+            window.Show();
+            Close();
+        }
+        private void Send_Click(object sender, RoutedEventArgs e)
+        {
+            if (DB.Command($"insert into Answers values ({questions[Count].ID}, {DB.UserID}, '{AnswerText.Text}')"))
             {
                 MessageBox.Show("Ответ принят");
                 Count += 1;
@@ -73,34 +79,6 @@ namespace TestCursach
             {
                 MessageBox.Show("Ошибка");
             }
-        }
-
-        private void No_Click(object sender, RoutedEventArgs e)
-        {
-            if (DB.Command($"insert into Answers values ({questions[Count].ID}, {DB.UserID}, 0)"))
-            {
-                MessageBox.Show("Ответ принят");
-                Count += 1;
-                if (Count == questions.Count)
-                {
-                    MessageBox.Show("Тест окончен, результаты можно посмотреть позже");
-                }
-                else
-                {
-                    ChangeQuestion();
-                }
-            }
-            else
-            {
-                MessageBox.Show("Ошибка");
-            }
-        }
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow window = new MainWindow();
-            window.Show();
-            Close();
         }
     }
 }

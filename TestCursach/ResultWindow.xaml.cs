@@ -27,16 +27,31 @@ namespace TestCursach
         public ResultWindow()
         {
             InitializeComponent();
-            DataTable dt = DB.Select($"select Count([Answers].[value]) as Result, Professions.[name] from Answers " +
+            DataTable dt = DB.Select($"select [Answers].[value], Questions.answer, Questions.score from Answers " +
                 $"join Questions on Questions.id = Answers.id_q " +
-                $"join Professions on Professions.id = Questions.id_p " +
-                $"where Answers.id_u = {DB.UserID} " +
-                $"group by Professions.[name] ");
+                $"where Answers.id_u = {DB.UserID} ");
             List<Answer> answers = new List<Answer>();
+            int final_score = 0;
             foreach (DataRow dr in dt.Rows)
             {
-                answers.Add(new Answer { Result = Convert.ToDouble(dr["Result"]), Profession = dr["name"].ToString() });
+                int score = 0;
+                if(dr["answer"].ToString() == dr["value"].ToString())
+                {
+                    score = Convert.ToInt32(dr["score"]);
+                }
+                else
+                {
+                    score = 0;
+                }
+                answers.Add(new Answer 
+                {
+                    AnswerText = dr["answer"].ToString(),
+                    Result = dr["value"].ToString(),
+                    Score = score.ToString()
+                });
+                final_score += score;
             }
+            Score.Content = "Общий счет: " + final_score;
             Results.ItemsSource = answers;
         }
     }

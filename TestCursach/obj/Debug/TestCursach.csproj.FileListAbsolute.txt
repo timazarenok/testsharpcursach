@@ -73,8 +73,6 @@ C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveChart
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.xml
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\bin\Debug\LiveCharts.Wpf.xml
-C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.AssemblyReference.cache
-C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddProfessionWindow.g.cs
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddQuestion.g.cs
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AdminWindow.g.cs
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\EditQuestion.g.cs
@@ -88,7 +86,6 @@ C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\App.g.cs
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach_MarkupCompile.cache
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach_MarkupCompile.lref
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\App.baml
-C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddProfessionWindow.baml
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AddQuestion.baml
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\AdminWindow.baml
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\EditQuestion.baml
@@ -105,3 +102,4 @@ C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursa
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.CopyComplete
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.exe
 C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.pdb
+C:\Users\timog\OneDrive\Desktop\testsharpcursach\TestCursach\obj\Debug\TestCursach.csproj.AssemblyReference.cache

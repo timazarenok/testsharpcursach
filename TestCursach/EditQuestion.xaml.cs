@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,27 +24,47 @@ namespace TestCursach
         public EditQuestion()
         {
             InitializeComponent();
-            SetProfessions();
         }
 
         public string ID { get; set; }
-        public void SetProfessions()
+        private void Score_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            DataTable dt = DB.Select("select * from Professions");
-            List<string> professions = new List<string>();
-            foreach (DataRow dr in dt.Rows)
-            {
-                professions.Add(dr["name"].ToString());
-            }
-            Professions.ItemsSource = professions;
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            int id_p = DB.GetId($"select * from Professions where [name]='{Professions.SelectedItem}'");
-            if (DB.Command($"update Questions set [name] = '{Name.Text}', id_p = {id_p} where id={ID}"))
+            if(Name.Text.Length > 0 && Answer.Text.Length > 0 && Score.Text.Length > 0)
             {
-                Close();
+                if (DB.Command($"update Questions set [name] = '{Name.Text}', answer = '{Answer.Text}', score = '{Score.Text}' where id={ID}"))
+                {
+                    Close();
+                }
             }
+            else
+            {
+                if (Name.Text.Length > 0)
+                {
+                    if (DB.Command($"update Questions set [name] = '{Name.Text}' where id={ID}"))
+                    {
+                        Close();
+                    }
+                }
+                if (Answer.Text.Length > 0)
+                {
+                    if (DB.Command($"update Questions set answer = '{Answer.Text}' where id={ID}"))
+                    {
+                        Close();
+                    }
+                }
+                if (Score.Text.Length > 0)
+                {
+                    if (DB.Command($"update Questions set score = '{Score.Text}' where id={ID}"))
+                    {
+                        Close();
+                    }
+                }
+            } 
         }
     }
 }

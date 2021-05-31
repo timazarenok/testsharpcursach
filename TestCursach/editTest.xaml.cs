@@ -29,7 +29,7 @@ namespace TestCursach
         }
         public void SetQuestions()
         {
-            DataTable dt = DB.Select("select Questions.id, Questions.[name], Professions.[name] as profession from Questions join Professions on Professions.id = Questions.id_p");
+            DataTable dt = DB.Select("select Questions.id, Questions.[name] from Questions");
             List<Test> tests = new List<Test>();
             foreach (DataRow dr in dt.Rows)
             {
@@ -37,7 +37,6 @@ namespace TestCursach
                 {
                     ID = dr["id"].ToString(),
                     Name = dr["name"].ToString(),
-                    Profession = dr["profession"].ToString()
                 });
             }
             Questions.ItemsSource = tests;
@@ -49,7 +48,6 @@ namespace TestCursach
             DB.QuestionID = Convert.ToInt32(t.ID);
             EditQuestion window = new EditQuestion();
             window.ID = t.ID;
-            window.Professions.SelectedItem = t.Profession;
             window.Name.Text = t.Name;
             window.Show();
             Close();

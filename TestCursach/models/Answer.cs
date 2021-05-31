@@ -8,7 +8,8 @@ namespace TestCursach.models
 {
     class Answer
     {
-        public double Result { get; set; }
-        public string Profession { get; set; }
+        public string AnswerText { get; set; }
+        public string Result { get; set; }
+        public string Score { get; set; }
     }
 }

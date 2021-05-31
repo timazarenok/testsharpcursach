@@ -9,20 +9,30 @@
         Title="ResultWindow" Height="450" Width="800">
     <Grid>
         <Label FontSize="24" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center">Результаты</Label>
-        <ListBox Name="Results" Width="250" Background="#fdffb6">
+        <ListBox Name="Results" Width="400" Margin="200,0,0,0" Background="#fdffb6">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="0,2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="150" />
-                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="150" />
+                            <ColumnDefinition Width="50" />
                         </Grid.ColumnDefinitions>
-                        <TextBlock Text="{Binding Profession}" />
-                        <TextBlock Text="{Binding Result}" Grid.Column="1" />
+                        <TextBlock Text="Ваш ответ" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" />
+                        <TextBlock Text="Правильный ответ" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock Text="Счет" Grid.Row="0" Grid.Column="2" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Result}" Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding AnswerText}" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Score}" Grid.Row="1" Grid.Column="2" TextWrapping="Wrap" />
                     </Grid>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <Label x:Name="Score" Content="Общий счет: " FontSize="25" FontWeight="Bold"/>
     </Grid>
     
 </Window>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,26 +26,27 @@ namespace TestCursach
         {
             InitializeComponent();
             IDTest = DB.GetId("select top 1 * from Tests order by id desc");
-            SetProfessions();
-        }
-        public void SetProfessions()
-        {
-            DataTable dt = DB.Select("select * from Professions");
-            List<string> professions = new List<string>();
-            foreach (DataRow dr in dt.Rows)
-            {
-                professions.Add(dr["name"].ToString());
-            }
-            Professions.ItemsSource = professions;
         }
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            int id_p = DB.GetId($"select * from Professions where [name]='{Professions.SelectedItem}'");
-            if (DB.Command($"insert into Questions values({IDTest}, {id_p}, '{Name.Text}')"))
+            if (Name.Text.Length > 0 && Answer.Text.Length > 0 && Score.Text.Length > 0)
             {
-                Close();
+                if (DB.Command($"insert into Questions values({IDTest}, '{Name.Text}', '{Answer.Text}', {Score.Text})"))
+                {
+                    Close();
+                }
             }
+            else
+            {
+                MessageBox.Show("Введите данные");
+            }
+        }
+
+        private void Score_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

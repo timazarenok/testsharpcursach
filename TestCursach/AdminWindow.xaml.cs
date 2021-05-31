@@ -31,9 +31,9 @@ namespace TestCursach
             window.Show();
         }
 
-        private void AddProfession_Click(object sender, RoutedEventArgs e)
+        private void Exit_Click(object sender, RoutedEventArgs e)
         {
-            AddProfessionWindow window = new AddProfessionWindow();
+            LoginWindow window = new LoginWindow();
             window.Show();
             Close();
         }
