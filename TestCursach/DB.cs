@@ -11,7 +11,7 @@ namespace TestCursach
 {
     public class DB
     {
-        public const string connectionString = @"Server=DESKTOP-VAR3OC6\SQLEXPRESS;Database=Test;Trusted_Connection=True;";
+        public const string connectionString = @"Server=DANIKDRANIK\TEW_SQLEXPRESS;Database=Test2;Trusted_Connection=True;";
         public static int UserID = 0;
         public static int TestID = 0;
         public static int QuestionID = 0;

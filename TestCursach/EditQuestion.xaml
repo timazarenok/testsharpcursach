@@ -12,8 +12,6 @@
         <Label Margin="0,0,0,300" FontSize="18" Width="120" Height="30">Вопрос</Label>
         <Label Margin="0,0,200,40" FontSize="18" Width="140" Height="30">Счет за вопрос</Label>
         <TextBox x:Name="Score" Width="100" Height="25" Margin="60,0,0,30" PreviewTextInput="Score_PreviewTextInput" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
-        <Label Margin="0,20,0,00" FontSize="18" Width="120" Height="30">Ответ</Label>
-        <TextBox x:Name="Answer" Width="500" Height="75" Margin="0,150,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible"/>
         <Button x:Name="Next" Content="Изменить" Width="120" Height="25" Margin="0,300,0,0" Click="Next_Click"/>
     </Grid>
 </Window>

@@ -34,9 +34,9 @@ namespace TestCursach
         }
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            if(Name.Text.Length > 0 && Answer.Text.Length > 0 && Score.Text.Length > 0)
+            if(Name.Text.Length > 0 && Score.Text.Length > 0)
             {
-                if (DB.Command($"update Questions set [name] = '{Name.Text}', answer = '{Answer.Text}', score = '{Score.Text}' where id={ID}"))
+                if (DB.Command($"update Questions set [name] = '{Name.Text}', score = '{Score.Text}' where id={ID}"))
                 {
                     Close();
                 }
@@ -46,13 +46,6 @@ namespace TestCursach
                 if (Name.Text.Length > 0)
                 {
                     if (DB.Command($"update Questions set [name] = '{Name.Text}' where id={ID}"))
-                    {
-                        Close();
-                    }
-                }
-                if (Answer.Text.Length > 0)
-                {
-                    if (DB.Command($"update Questions set answer = '{Answer.Text}' where id={ID}"))
                     {
                         Close();
                     }

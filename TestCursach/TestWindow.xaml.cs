@@ -29,13 +29,24 @@ namespace TestCursach
             Count = 0;
             SetTestQuestions();
             DeletePreviousAnsers();
+            SetAnswers();
         }
         public void DeletePreviousAnsers()
         {
-            if(DB.Command($"delete from Answers where id_u = {DB.UserID}"))
+            if(DB.Command($"delete from Question_Answers where id_u = {DB.UserID}"))
             {
                 MessageBox.Show("Старт");
             }
+        }
+        private void SetAnswers()
+        {
+            DataTable dt = DB.Select($"select * from Answers where id_q={questions[Count].ID}");
+            List<Answer> answers = new List<Answer>();
+            foreach(DataRow dr in dt.Rows)
+            {
+                answers.Add(new Answer { ID = dr["id"].ToString(), AnswerText = dr["value"].ToString() });
+            }
+            Answers.ItemsSource = answers;
         }
         public void SetTestQuestions()
         {
@@ -51,6 +62,7 @@ namespace TestCursach
         public void ChangeQuestion()
         {
             Question.Text = questions[Count].Value;
+            SetAnswers();
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
@@ -59,9 +71,11 @@ namespace TestCursach
             window.Show();
             Close();
         }
-        private void Send_Click(object sender, RoutedEventArgs e)
+
+        private void Answers_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (DB.Command($"insert into Answers values ({questions[Count].ID}, {DB.UserID}, '{AnswerText.Text}')"))
+            Answer answer = (Answer)Answers.SelectedItem;
+            if (DB.Command($"insert into Question_Answers values ({questions[Count].ID}, {answer.ID}, {DB.UserID})"))
             {
                 MessageBox.Show("Ответ принят");
                 Count += 1;

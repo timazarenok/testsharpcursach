@@ -8,8 +8,8 @@ namespace TestCursach.models
 {
     class Answer
     {
+        public string ID { get; set; }
         public string AnswerText { get; set; }
-        public string Result { get; set; }
         public string Score { get; set; }
     }
 }

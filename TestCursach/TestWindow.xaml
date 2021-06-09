@@ -8,8 +8,15 @@
         Title="TestWindow" Height="450" Width="800">
     <Grid>
         <TextBlock x:Name="Question" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DarkRed" FontSize="20" FontWeight="Bold" Width="700" Height="100" Margin="0,0,0,200"/>
-        <TextBox x:Name="AnswerText" Width="500" Height="75" Margin="0,20,0,0"/>
-        <Button x:Name="Send" Width="190" Height="50" FontSize="20" Margin="0,200,0,0" Click="Send_Click">Отправить ответ</Button>
-        <Button x:Name="Exit" Width="120" Height="30" Margin="0,300,500,0" Click="Exit_Click">Выход</Button>
+        <ListBox x:Name="Answers" Width="500" Height="200" Margin="0,150,0,0" MouseDoubleClick="Answers_MouseDoubleClick">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <TextBlock Text="{Binding AnswerText}" FontWeight="Bold" Margin="0,0,0,10"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="Exit" Width="120" Height="30" Margin="0,350,630,0" Click="Exit_Click">Выход</Button>
     </Grid>
 </Window>

@@ -30,10 +30,13 @@ namespace TestCursach
 
         private void Next_Click(object sender, RoutedEventArgs e)
         {
-            if (Name.Text.Length > 0 && Answer.Text.Length > 0 && Score.Text.Length > 0)
+            if (Name.Text.Length > 0 && AnswersCount.Text.Length > 0 && Score.Text.Length > 0)
             {
-                if (DB.Command($"insert into Questions values({IDTest}, '{Name.Text}', '{Answer.Text}', {Score.Text})"))
+                if (DB.Command($"insert into Questions values({IDTest}, '{Name.Text}', {Score.Text})"))
                 {
+                    int id = DB.GetId($"select id from Questions where name='{Name.Text}'");
+                    addAnswers window = new addAnswers(Convert.ToInt32(AnswersCount.Text), id);
+                    window.Show();
                     Close();
                 }
             }

@@ -27,15 +27,16 @@ namespace TestCursach
         public ResultWindow()
         {
             InitializeComponent();
-            DataTable dt = DB.Select($"select [Answers].[value], Questions.answer, Questions.score from Answers " +
-                $"join Questions on Questions.id = Answers.id_q " +
-                $"where Answers.id_u = {DB.UserID} ");
+            DataTable dt = DB.Select($"select * from Question_Answers " +
+                $"join Questions on Questions.id = Question_Answers.id_q " +
+                $"join Answers on Answers.id = Question_Answers.id_a " +
+                $"where id_u = { DB.UserID} ");
             List<Answer> answers = new List<Answer>();
             int final_score = 0;
             foreach (DataRow dr in dt.Rows)
             {
                 int score = 0;
-                if(dr["answer"].ToString() == dr["value"].ToString())
+                if(Convert.ToInt32(dr["id_a"].ToString()) % 2 == 0)
                 {
                     score = Convert.ToInt32(dr["score"]);
                 }
@@ -45,8 +46,7 @@ namespace TestCursach
                 }
                 answers.Add(new Answer 
                 {
-                    AnswerText = dr["answer"].ToString(),
-                    Result = dr["value"].ToString(),
+                    AnswerText = dr["value"].ToString(),
                     Score = score.ToString()
                 });
                 final_score += score;
